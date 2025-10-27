@@ -1,0 +1,62 @@
+import React from "react";
+import "./index.css";
+
+export default function App() {
+  return (
+    <div className="landing-container">
+      {/* Navbar */}
+      <header className="navbar">
+        <img src="../assets/logo.png" alt="INeed Logo" className="logo" />
+        <nav className="nav-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#funcionalidades">Funcionalidades</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="hero-section" id="sobre">
+        <div className="hero-text">
+          <h1>INeed — Conectando quem precisa com quem pode ajudar</h1>
+
+          {/* Slogan */}
+          <h2 className="slogan">
+            “Seu serviço, sua necessidade, nossa comunidade”
+          </h2>
+
+          <p>
+            O INeed é um aplicativo criado para facilitar a solidariedade e
+            promover a empatia. Conectamos voluntários e beneficiários em um só
+            lugar, tornando mais simples o ato de ajudar.
+          </p>
+
+          <button className="download-btn">Baixe o App</button>
+        </div>
+      </section>
+
+      {/* Funcionalidades */}
+      <section id="funcionalidades" className="features-section">
+        <h2>Por que usar o INeed?</h2>
+        <div className="features-grid">
+          <div className="feature-card">
+            <h3>Conexão Rápida</h3>
+            <p>Encontre e ofereça ajuda em poucos cliques.</p>
+          </div>
+          <div className="feature-card">
+            <h3>Interface Intuitiva</h3>
+            <p>Design simples e acessível, pensado para todos os públicos.</p>
+          </div>
+          <div className="feature-card">
+            <h3>Segurança e Confiança</h3>
+            <p>Validação de perfis e comunicação segura entre usuários.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer id="contato" className="footer">
+        <p>© 2025 INeed | Todos os direitos reservados</p>
+      </footer>
+    </div>
+  );
+}
