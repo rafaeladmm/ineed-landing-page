@@ -16,20 +16,16 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="hero-section" id="sobre">
-        <div className="hero-text">
+        <div className="hero-text hero-text-center">
           <h1>INeed — Conectando quem precisa com quem pode ajudar</h1>
-
-          {/* Slogan */}
           <h2 className="slogan">
-            “Seu serviço, sua necessidade, nossa comunidade”
+            “seu serviço, sua necessidade, nossa comunidade”
           </h2>
-
           <p>
             O INeed é um aplicativo criado para facilitar a solidariedade e
             promover a empatia. Conectamos voluntários e beneficiários em um só
             lugar, tornando mais simples o ato de ajudar.
           </p>
-
           <button className="download-btn">Baixe o App</button>
         </div>
       </section>
@@ -53,8 +49,23 @@ export default function App() {
         </div>
       </section>
 
+      {/* Contato */}
+      <section id="contato" className="contact-section">
+        <h2>Fale Conosco</h2>
+        <p>
+          Quer ajudar ou precisa de suporte? Envie uma mensagem e responderemos
+          rapidamente!
+        </p>
+        <form className="contact-form">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+          <textarea placeholder="Sua mensagem" rows={4} required></textarea>
+          <button type="submit" className="download-btn">Enviar</button>
+        </form>
+      </section>
+
       {/* Footer */}
-      <footer id="contato" className="footer">
+      <footer className="footer">
         <p>© 2025 INeed | Todos os direitos reservados</p>
       </footer>
     </div>
