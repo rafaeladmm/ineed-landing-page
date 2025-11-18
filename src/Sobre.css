@@ -1,0 +1,124 @@
+/* CONTAINER PRINCIPAL */
+.sobre-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem 3rem;
+  color: #0D0D0D;
+}
+
+/* TÍTULO COM GRADIENTE CENTRALIZADO */
+.sobre-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin: 0 auto 0.5rem auto;
+
+  /* GRADIENTE */
+  background: linear-gradient(90deg, #0066FF 0%, #00A6FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  display: block;             /* ocupar largura total para centralizar */
+  width: fit-content;         /* apenas tamanho do texto */
+}
+
+
+.sobre-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 3.5rem;
+}
+
+/* SEÇÕES */
+.sobre-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4.5rem;
+  gap: 2.5rem;
+}
+
+.sobre-section.invertida {
+  flex-direction: row-reverse;
+}
+
+/* TEXTO */
+.sobre-text {
+  flex: 1;
+}
+
+.sobre-text h2 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+  color: #0066FF;
+  font-weight: 700;
+}
+
+.sobre-text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* IMAGENS CLEAN */
+.sobre-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-img img {
+  width: 86%;
+  max-width: 350px;
+  border-radius: 18px;
+  border: none;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+/* LINHA DE DIVISÃO ENTRE AS FASES */
+.linha-divisao {
+  margin: 4rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.linha-divisao::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  background: #E0F0FF;
+  z-index: -1;
+}
+
+.linha-divisao span {
+  background: #E0F0FF;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #0066FF;
+  border-radius: 8px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .sobre-section,
+  .sobre-section.invertida {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-img img {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .linha-divisao {
+    margin: 3rem 0;
+  }
+}

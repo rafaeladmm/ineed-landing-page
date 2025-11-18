@@ -1,5 +1,6 @@
 import React from "react";
-import "./index.css";
+import { Link } from "react-router-dom"; 
+import "./App.css";
 
 export default function App() {
   return (
@@ -8,25 +9,32 @@ export default function App() {
       <header className="navbar">
         <img src="../assets/logo.png" alt="INeed Logo" className="logo" />
         <nav className="nav-links">
-          <a href="#sobre">Sobre</a>
+          <Link to="/sobre">Sobre</Link>
           <a href="#funcionalidades">Funcionalidades</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="hero-section" id="sobre">
-        <div className="hero-text hero-text-center">
-          <h1>INeed — Conectando quem precisa com quem pode ajudar</h1>
-          <h2 className="slogan">
-            “seu serviço, sua necessidade, nossa comunidade”
-          </h2>
-          <p>
-            O INeed é um aplicativo criado para facilitar a solidariedade e
-            promover a empatia. Conectamos voluntários e beneficiários em um só
-            lugar, tornando mais simples o ato de ajudar.
-          </p>
-          <button className="download-btn">Baixe o App</button>
+      <section className="hero-section" id="home">
+        <div className="hero-wrapper">
+          <div className="hero-text">
+            <h1>INeed — Conectando quem precisa com quem pode ajudar</h1>
+            <h2 className="slogan">
+              “seu serviço, sua necessidade, nossa comunidade”
+            </h2>
+            <p>
+              O INeed é um aplicativo criado para facilitar a solidariedade e
+              promover a empatia. Conectamos voluntários e beneficiários em um
+              só lugar, tornando mais simples o ato de ajudar.
+            </p>
+            <button className="download-btn">Baixe o App</button>
+          </div>
+
+          {/* Mockup Image */}
+          <div className="hero-image">
+            <img src="../assets/principal.png" alt="Mockup INeed" />
+          </div>
         </div>
       </section>
 
